@@ -6,3 +6,6 @@ Perfom demo Login Guru99 page
 * How to run
 - User cd to contain folder project
 - Open cmd and perfom text: mvn test
+* How to check report
+- Open project with Intellij
+- Choose path: target/surefire report/ <open index.html> and <open emailablereport.html>
