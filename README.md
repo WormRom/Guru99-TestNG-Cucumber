@@ -8,5 +8,5 @@ Perfom demo Login Guru99 page
 - Open cmd and perfom text: mvn test
 * How to check report
 - Open project with Intellij
-- Choose path: target/surefire report/ <open index.html> and <open emailablereport.html>
+- Choose path: target/surefire report/open "index.html" and open "emailablereport.html"
 + Reporting of cucumber path: target/cucumber-report/cucumber.html
