@@ -10,3 +10,4 @@ Perfom demo Login Guru99 page
 - Open project with Intellij
 - Choose path: target/surefire report/open "index.html" and open "emailablereport.html"
 + Reporting of cucumber path: target/cucumber-report/cucumber.html
++Reporting custom TestNG path: test-output/TestReport/Test.html
