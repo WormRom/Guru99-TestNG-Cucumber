@@ -18,7 +18,7 @@ public class LoginPage {
     String userName = "userName";
     String passWord = "password";
     String submit = "submit";
-    public final static int TIMEOUT = 10;
+    public final static int TIMEOUT = 5;
     @Before
     public void setUp(){
         WebDriverManager.chromedriver().setup();
@@ -38,12 +38,12 @@ public class LoginPage {
     }
     @Then("User should be able to login successfully and new page open")
     public void verifyLogin(){
-        String headingHomePage = driver.findElement(By.xpath("//h3")).getText();
+        String headingHomePage = driver.findElement(By.xpath("//td/h3")).getText();
         Assert.assertEquals(headingHomePage,"Login Successfully");
     }
     @Then("User should be able to see error message {string}")
     public void verifyErrorMessage(String expectedErrorMessage){
-        String actualErrorMessage = driver.findElement(By.xpath("//span")).getText();
+        String actualErrorMessage = driver.findElement(By.xpath("//form[@name='home']/table/tbody/tr/td/table/tbody/tr/td/span")).getText();
         Assert.assertEquals(actualErrorMessage,expectedErrorMessage);
     }
     @After

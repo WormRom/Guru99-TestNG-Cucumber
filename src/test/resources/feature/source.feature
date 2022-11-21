@@ -17,5 +17,5 @@ Feature: Login to Guru99 Page
 
     Examples:
       | username  | password   | errorMessage        |
-      | tutorial1 | tutorial1  | Enter your userName and password correct |
-      | tutorial2 | tutorial#@ | Enter your userName and password correct |
+      | quadeptrai  | lapdetrai  | Enter your userName and password correct |
+      | tutori@al2 | tutorial#@ | Enter your userName and password correct |
